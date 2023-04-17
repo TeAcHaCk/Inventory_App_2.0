@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -30,7 +29,6 @@ public class Item_Add_Fragment extends Fragment {
     private ImageView mImageView;
     private ProgressBar mProgressBar;
 
-    ActivityResultLauncher<String> mtakepic;
 
     private Uri mImageUri;
     @Override

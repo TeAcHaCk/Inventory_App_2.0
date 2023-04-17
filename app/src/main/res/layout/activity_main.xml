@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<RelativeLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,24 +7,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:id="@+id/drawerLayout"
+    android:id="@+id/activity_main"
     tools:context=".MainActivity">
 
-    <include
-        layout="@layout/app_bar_main">
-    </include>
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:text="Inventory Management"
+        android:textStyle="bold"
+        android:textSize="30dp">
+    </TextView>
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        android:id="@+id/navigationView"
-        app:headerLayout="@layout/header_layout"
-        app:menu="@menu/navigation_item">
+    <Button
+        android:id="@+id/Add_item"
+        android:text="Add Item"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp">
+    </Button>
 
-    </com.google.android.material.navigation.NavigationView>
+    <Button
+        android:id="@+id/remove_item"
+        android:layout_width="250dp"
+        android:text="View Item"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Add_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp">
+    </Button>
 
+    <Button
+        android:id="@+id/delete_item"
+        android:layout_width="250dp"
+        android:text="Delete Item"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp">
+    </Button>
 
+    <Button
+        android:id="@+id/not_used"
+        android:layout_width="250dp"
+        android:text="Not Used Item"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp">
+    </Button>
 
-</androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>
